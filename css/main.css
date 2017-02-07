@@ -1,0 +1,142 @@
+/* html, body */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #111;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #11719e;
+  font-weight: bold;
+}
+
+/* LISTS */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  float: left;
+}
+
+/* LINKS */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #666;    
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* TABLES */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+th {
+  color: blue;
+  font-weight: bold;
+}
+
+/* FORMS */
+input[type=text], textarea {
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font: normal 14px monospace;
+    margin-bottom: 5px;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button {
+    background: #fff;
+    border: 1px solid #111;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font: normal 14px Helvetica, Arial, sans-serif;
+}
+
+button:hover {
+  background: lightgreen;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* CLEARFIX */
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+/* SCROLLING*/
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ICONS */
+.icon {
+    float: left;
+    margin-right: 3px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons_24x24.png);
+    cursor: pointer;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.i-edit {
+    background-position: -26px 0px;
+}
+
+.i-delete {
+    background-position: -130px 0px;
+}
+
+.i-edit:hover {
+    background-position: -26px -26px;
+}
+
+.i-delete:hover {
+    background-position: -130px -26px;
+}
+
+/***************
+*** SECTIONS ***
+***************/
+
+.container {
+    margin: 30px;
+    min-height: 300px;
+    background: #fff;
+    position: relative;
+}

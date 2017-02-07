@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List of Books</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	
+	<!-- jquery -->
+	<script src="./lib/jquery-3.1.1.min/jquery-3.1.1.min.js"></script>
+
+	<!-- jquery ui -->
+	<script src="./lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	
+	<!-- common resources -->
+	<script src="./config.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+	<!-- this page resources -->
+	<script src="./js/books.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/books.css">
+</head>
+<body>
+	<div class="loading"></div>
+	<div class="container">
+		<div class="col col-form">
+			<input type="text" id="author" placeholder="Автор" value=""/>
+			<input type="text" id="title" placeholder="Название книги" value=""/>
+			<input type="text" id="date-publish" placeholder="Дата издания (дд.мм.гггг)" value=""/>
+			<input type="text" id="page-count" placeholder="Кол-во страниц" value=""/>
+			<div class="form-controls">
+				<button id="book-add">Добавить</button>
+				<button id="book-edit">Обновить</button>
+				<button id="switch-mode">Добавить новую книгу ...</button>
+			</div>
+		</div>
+		<div class="col col-booklist">
+			<ul class="book-list"></ul>
+		</div>
+	</div>
+</body>
+</html>

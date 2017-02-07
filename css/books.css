@@ -1,0 +1,48 @@
+.col {
+    float: left;
+    width: 50%;
+}
+
+.book-list li {
+    line-height: 24px;
+    float: inherit;
+}
+
+.book-list li.current {
+    background: lightgoldenrodyellow;
+}
+
+.book-list li .full-title {
+    float: left;
+    margin-right: 7px;
+}
+
+.book-list li .actions {
+	float: left;
+	margin-right: 10px;
+}
+
+.form-controls {
+    margin-top: 10px;
+}
+
+.loading {
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url('../img/loading.gif');
+}
+
+@media (max-width: 768px) {
+	
+	.col {
+		float: inherit;
+		width: 100%;
+	}
+	
+	.col-form {
+		margin-bottom: 30px;
+	}
+}
